@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>hw1</title>
+
+        <style>
+            body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7ff; /* 淺藍主背景 */
+            }
+
+            .submit-btn:hover {
+            transform: scale(1.15); /* 鼠標移上去稍微放大 */
+            }
+            .submit-btn {
+            margin-left:20px;
+            }
+            
+
+            .reset-btn:hover {
+            transform: scale(1.15); /* 鼠標移上去稍微放大 */
+            }
+        </style>
+    </head>
+
+
+    
+    <body>
+        <div align="center">
+            <br/> <br/> <br/>
+            <a href="https://chiikawamarket.jp/zh-hant"target="_blank"><img src="https://pic2.zhimg.com/v2-6bbc1b2727f0d919950fe3cedfb055ab_1440w.gif" /></a>
+
+            <br/>
+            <h1>哈嘍你好，這是一份作業</h1>
+            <h3>你是誰⭣</h3>
+
+            <form method="GET" action="page1.html">
+                <input type="text" name="Test1" placeholder="請輸入名字" required  oninvalid="this.setCustomValidity('名字不得為空！')"  oninput="this.setCustomValidity('')"/>
+            身份:
+                <select name="Status" size="1">
+                    <option value="老師">老師</option>
+                    <option value="同學">同學</option> 
+                    <input type="submit" value="寄出" class="submit-btn"/>
+                    <input type="reset" value="清空" class="reset-btn"/>
+                </select>
+            </form>
+    
+        </div>
+    </body>
+</html>
